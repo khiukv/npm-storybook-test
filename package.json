@@ -1,25 +1,15 @@
 {
-  "name": "@khiukv/npm-storybook-test",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/khiukv"
-  },
+  "name": "smart-ui",
   "version": "1.0.0",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "files": [
-    "dist/**/*"
-  ],
   "types": "dist/index.d.ts",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:khiukv/npm-storybook-test.git"
   },
   "author": "",
   "license": "ISC",
