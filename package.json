@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/khiukv"
   },
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "dist/esm/index.js",
   "module": "dist/cjs/index.js",
@@ -12,7 +12,7 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c",
+    "rollup": "rollup -c --bundleConfigAsCjs",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
