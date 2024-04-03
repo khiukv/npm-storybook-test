@@ -14,12 +14,12 @@
     "module": "ESNext",
     "declaration": true,
     "declarationDir": "types",
-    "sourceMap": false,
+    "sourceMap": true,
     "outDir": "dist",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "strictNullChecks": false
   },
   "include": ["src", "jest.config.js"]
