@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import { ButtonProps } from './types';
+import { ButtonProps } from './Button.types';
 
-export const CustomButton = ({
+export const CustomButton: React.FC<ButtonProps> = ({
   // color = 'primary',
   // size = 'medium',
   // variant = 'text',
