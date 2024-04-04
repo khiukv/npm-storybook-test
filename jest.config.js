@@ -1,6 +1,7 @@
 module.exports = {
-    testEnvironment: "jsdom",
-    moduleNameMapper: {
-      ".(css|less|scss)$": "identity-obj-proxy",
-    },
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.{js,ts,jsx,tsx}'],
+  coverageDirectory: 'coverage',
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   };

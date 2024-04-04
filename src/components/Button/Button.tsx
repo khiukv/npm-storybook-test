@@ -1,15 +1,21 @@
-import React, { FC, HTMLAttributes } from 'react'
+import React from 'react';
+import Button from '@mui/material/Button';
+import { ButtonProps } from './types';
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  className?: string
-}
-
-export const Button: React.FC<ButtonProps> = ({
-  children,
-  className,
+export const CustomButton = ({
+  // color = 'primary',
+  // size = 'medium',
+  // variant = 'text',
+  label,
   ...props
-}) => (
-    <button {...props}>
-        {children}
-    </button>
-)
+}: ButtonProps) => {
+  return (
+    <Button
+      // color = {color}
+      // size = {size}
+      {...props}
+    >
+      {label}
+    </Button>
+  );
+}

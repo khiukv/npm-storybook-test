@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/khiukv"
   },
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "dist/esm/index.js",
   "module": "dist/cjs/index.js",
@@ -15,7 +15,9 @@
     "rollup": "rollup -c --bundleConfigAsCjs",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
     "@storybook/react-vite": "^8.0.5",
     "@svgr/rollup": "^6.5.1",
     "@svgr/webpack": "^6.5.1",
+    "@types/jest": "^29.5.12",
     "@types/react": "^18.0.27",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "5.33.0",
@@ -57,10 +60,16 @@
     "url-loader": "^4.1.1"
   },
   "peerDependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/material": "^5.15.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@storybook/test": "^8.0.5"
+    "@storybook/test": "^8.0.5",
+    "@testing-library/react": "^14.2.2",
+    "@testing-library/user-event": "^14.5.2"
   }
 }
