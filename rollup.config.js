@@ -5,6 +5,7 @@ const svgr = require('@svgr/rollup')
 const terser = require('@rollup/plugin-terser')
 const dts = require('rollup-plugin-dts')
 const packageJson = require('./package.json')
+const json = require('@rollup/plugin-json');
 
 module.exports = [
   {
@@ -32,7 +33,8 @@ module.exports = [
       }),
       url(),
       svgr({ icon: true }),
-      terser()
+      terser(),
+      json()
     ]
   },
   {
