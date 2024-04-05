@@ -8,14 +8,16 @@ export const CustomButton: React.FC<ButtonProps> = ({
   // variant = 'text',
   label,
   ...props
-}: ButtonProps) => {
+}) => {
   return (
-    <Button
+    <>
+        <Button
       // color = {color}
       // size = {size}
       {...props}
     >
       {label}
     </Button>
+    </>
   );
 }
