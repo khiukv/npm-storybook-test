@@ -19,7 +19,6 @@ module.exports = [
         format: 'esm'
       }
     ],
-    external: ['react', 'react-dom', '@emotion/react', '@emotion/styled', '@mui/icons-material', '@mui/material'],
     plugins: [
       typescript({
         tsconfig: './tsconfig.json',
