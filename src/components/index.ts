@@ -1,2 +1,2 @@
-export * from './smartrating';
+export * from './Smartrating';
 export * from './Button';
